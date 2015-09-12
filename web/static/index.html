@@ -11,10 +11,17 @@
 <body ng-controller="MainController">
 <h2>{{ title }}</h2>
 
+    <form id="searchbar">
+        <input type="text" placeholder="Search" required>
+        <input type="button" value="Search">
+            
+    </form>
+
 <div class="row">
     <div class="col-md-10">
         <ul>
 	<div ng-repeat="skill in skills">
+       
             <li>
                 <a href="#" ng-click="setShowAssociatedSkills()">{{ skill.primary_term }}</a>
 

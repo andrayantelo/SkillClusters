@@ -27,9 +27,9 @@ def json_serial(obj):
 
 def skill_pair_default(o):
     if isinstance(o, SkillPair):    
-		return dict(secondary_term=o.secondary_term,
-					number_of_times=o.number_of_times,
-					ratio=str(o.ratio))
+        return dict(secondary_term=o.secondary_term,
+                    number_of_times=o.number_of_times,
+                    ratio=str(o.ratio))
 
 app.config.from_pyfile('settings.cfg')
 
